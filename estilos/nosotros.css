@@ -1,0 +1,137 @@
+.enlaces-navbar a:hover {
+  color: #0f0944; /* Azul oscuro */
+  box-shadow: 0  4px 8px rgb(25, 17, 75); /* Sombra azul suave */
+  border-radius: 2px; /* Bordes redondeados para que la sombra no se vea cuadrada */
+  padding: 4px 8px; /* Para que el box-shadow tenga espacio alrededor del texto */
+  transition: color 0.3s ease, box-shadow 0.3s ease, padding 0.3s ease;
+}
+.btn-outline-primary:hover {
+  color: #0f0944; /* Azul oscuro */
+  background-color: rgba(15, 9, 68, 0.1); /* Fondo azul claro al hover */
+  border-color: #0f0944;
+  transition: all 0.3s ease;
+}
+
+.title{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman',serif;
+    padding: 20px 0;
+}
+.title h1{
+  font-size:35px;
+}
+
+.subtitle{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman',serif;
+    font-size: 20px;
+}
+.title-one{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman',serif;
+    padding: 20px 0;
+    background-color: #1f3556;
+    color: white;
+    
+    
+}
+#container-principal{
+    width: 1000px;
+    height: 1000px;
+    background-color:white;
+    padding: 20px 0;
+    margin: 0 auto;
+    margin-bottom: 200px;
+
+}
+.logofinal{
+  text-align: center;
+  
+}
+.button-contact .btn {
+  background-color: #1f3556;
+
+}
+.button-contact{
+  text-align: center;
+  padding: 5px 0;
+}
+
+
+
+
+
+
+
+/*mando a lamar mi contenedor de footer*/
+.footer {
+  background-color: #1f3556;/*color del fondo de mi footer*/
+  text-align: center;/*texto alineado al centro*/
+  padding: 20px 0;/*tamaño de mi contenedor azul*/
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman',serif;/*tipo de letra*/
+}
+
+/*mando a llamar a mi div donde tengo mis iconos*/
+.networking-social {
+  margin-bottom: 10px;/*espacio entre los iconos y el texto*/
+}
+
+/*mando a llamar a las imagenes de mis iconos*/
+.networking-social img {
+  width: 40px;/*ancho de mis iconos de redes sociales*/
+  height: 40px;/*alto de mis iconos de redes sociales*/
+  border-radius: 50%; /* redondeo mis iconos */
+  display: inline-block;/*pongo los iconos alineados uno a un lado del otro*/
+  margin: 0 60px;/*espacio entre los iconos de redes sociales si le quito el cero me lo aplica para todos lados*/
+}
+/*mando a llamar mis iconos y los engrandezco*/
+.networking-social img:hover {
+  transform: scale(1.2);/*hace m+as grande mi icono cuando le paso el curosr*/
+}
+
+/* mando a llamar el texto del footer */
+.text-footer {
+  font-size:20px;/*tamaño de la letra*/
+  color: white;/*color de la letra*/
+}
+/*mando a llamar los span osea los alineamientos */
+.text-footer span {
+  margin:10px;/*espacio entre los span */
+  
+}
+/* Escritorio ancho */
+@media (min-width: 768px) {
+  .text-footer span {
+    display: inline-block;
+    margin: 0 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .logofinal img {
+    width: 300px; /* más pequeño para móviles */
+    margin-top: -40px;
+  }
+}
+
+/* Opcional: para pantallas muy pequeñas (teléfonos) */
+@media (max-width: 480px) {
+  .logofinal img {
+    width: 340px;
+  }
+}
+@media (max-width: 768px) {
+  .button-contact .btn {
+    font-size: 16px;
+    padding: 10px 20px;
+    width: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .button-contact .btn {
+    font-size: 10px;
+    padding: 8px 18px;
+    width: 200px;
+  }
+}
