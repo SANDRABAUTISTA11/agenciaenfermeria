@@ -11,6 +11,33 @@
   border-color: #0f0944;
   transition: all 0.3s ease;
 }
+#container-one {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  background-color: white;
+  width: 1000px;
+  margin: 0 auto 200px auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.text-container-one {
+  flex: 2;
+  min-width: 60%;
+}
+
+.img-enfermeriagral {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+
+.img-enfermeriagral img {
+  max-width: 150%;
+  height:auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
 
 
 
