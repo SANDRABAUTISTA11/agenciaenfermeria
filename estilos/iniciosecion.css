@@ -1,0 +1,30 @@
+body  {
+    background-image: url('../imagenes/enfermeras-scaled.jpg');
+  background-size: cover;       /* Ajusta la imagen al tamaño de la pantalla */
+  background-repeat: no-repeat; /* Evita que se repita */
+  background-position: center;  /* Centra la imagen */
+
+
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center;     /* Centra verticalmente */
+}
+
+.formularioInicio {
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  width: 500px;
+  height: 380px;
+  background-color: rgba(238, 240, 243, 0.555);
+  border: 2px solid rgba(11, 5, 59, 0.171);
+  border-radius: 10px;
+  padding: 20px;
+ margin-top: 20px;
+  text-align: center;
+
+ 
+}
