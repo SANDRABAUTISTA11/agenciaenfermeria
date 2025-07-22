@@ -4,6 +4,7 @@
   border-radius: 2px; /* Bordes redondeados para que la sombra no se vea cuadrada */
   padding: 4px 8px; /* Para que el box-shadow tenga espacio alrededor del texto */
   transition: color 0.3s ease, box-shadow 0.3s ease, padding 0.3s ease;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .btn-outline-primary:hover {
   color: #0f0944; /* Azul oscuro */
@@ -11,6 +12,12 @@
   border-color: #0f0944;
   transition: all 0.3s ease;
 }
+.navbar img{
+  height: 80px;
+  width: 90px;
+
+}
+
 
 .title{
     text-align: center;
@@ -38,11 +45,10 @@
 #container-principal{
     width: 1000px;
     height: 1000px;
-    background-color:white;
+    background-color: white;
     padding: 20px 0;
     margin: 0 auto;
     margin-bottom: 200px;
-
 }
 .logofinal{
   text-align: center;
@@ -55,6 +61,7 @@
 .button-contact{
   text-align: center;
   padding: 5px 0;
+  margin-bottom: 50px;
 }
 
 

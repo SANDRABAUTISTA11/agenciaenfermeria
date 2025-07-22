@@ -4,12 +4,18 @@
   border-radius: 2px; /* Bordes redondeados para que la sombra no se vea cuadrada */
   padding: 4px 8px; /* Para que el box-shadow tenga espacio alrededor del texto */
   transition: color 0.3s ease, box-shadow 0.3s ease, padding 0.3s ease;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .btn-outline-primary:hover {
   color: #0f0944; /* Azul oscuro */
   background-color: rgba(15, 9, 68, 0.1); /* Fondo azul claro al hover */
   border-color: #0f0944;
   transition: all 0.3s ease;
+}
+.navbar img{
+  height: 80px;
+  width: 90px;
+
 }
 #container-one {
   display: flex;
@@ -20,10 +26,13 @@
   margin: 0 auto 200px auto;
   padding: 20px;
   box-sizing: border-box;
+  
 }
 .text-container-one {
   flex: 2;
   min-width: 60%;
+  font-size: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .img-enfermeriagral {
@@ -50,6 +59,7 @@
 
 
 
+
 .logofinal{
   text-align: center;
   
@@ -61,6 +71,7 @@
 .button-contact{
   text-align: center;
   padding: 5px 0;
+  margin-bottom: 50px;
 }
 
 /*mando a lamar mi contenedor de footer*/

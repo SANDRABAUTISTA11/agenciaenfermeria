@@ -1,3 +1,38 @@
+.enlaces-navbar a:hover {
+  color: #0f0944; /* Azul oscuro */
+  box-shadow: 0  4px 8px rgb(25, 17, 75); /* Sombra azul suave */
+  border-radius: 2px; /* Bordes redondeados para que la sombra no se vea cuadrada */
+  padding: 4px 8px; /* Para que el box-shadow tenga espacio alrededor del texto */
+  transition: color 0.3s ease, box-shadow 0.3s ease, padding 0.3s ease;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.btn-outline-primary:hover {
+  color: #0f0944; /* Azul oscuro */
+  background-color: rgba(15, 9, 68, 0.1); /* Fondo azul claro al hover */
+  border-color: #0f0944;
+  transition: all 0.3s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 body  {
     background-image: url('../imagenes/enfermeras-scaled.jpg');
   background-size: cover;       /* Ajusta la imagen al tamaño de la pantalla */
@@ -10,21 +45,26 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-  display: flex;
-  justify-content: center; /* Centra horizontalmente */
-  align-items: center;     /* Centra verticalmente */
+  
+
+  
 }
 
 .formularioInicio {
-      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   width: 500px;
   height: 380px;
   background-color: rgba(238, 240, 243, 0.555);
   border: 2px solid rgba(11, 5, 59, 0.171);
   border-radius: 10px;
   padding: 20px;
- margin-top: 20px;
+  margin-top: 20px;
   text-align: center;
 
- 
+}
+.cajadeformulario{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }

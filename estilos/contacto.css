@@ -11,6 +11,7 @@ body {
   border-radius: 2px; /* Bordes redondeados para que la sombra no se vea cuadrada */
   padding: 4px 8px; /* Para que el box-shadow tenga espacio alrededor del texto */
   transition: color 0.3s ease, box-shadow 0.3s ease, padding 0.3s ease;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .btn-outline-primary:hover {
   color: #0f0944; /* Azul oscuro */
@@ -18,7 +19,11 @@ body {
   border-color: #0f0944;
   transition: all 0.3s ease;
 }
+.navbar img{
+  height: 80px;
+  width: 90px;
 
+}
 
 .formulario {
   display: flex;
@@ -33,6 +38,7 @@ body {
   border: 1px solid rgba(19, 11, 95, 0.171);  /* grosor, estilo y color */
   border-radius: 10px;       /* opcional: bordes redondeados */
   padding: 20px;             /* espacio interno opcional para que no se pegue el contenido al borde */
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 
