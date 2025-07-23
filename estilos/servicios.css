@@ -17,36 +17,125 @@
   width: 90px;
 
 }
-#container-one {
+
+
+.container-one {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  background-color: white;
+  background-color: rgba(235, 241, 245, 0.384);
   width: 1000px;
-  margin: 0 auto 200px auto;
-  padding: 20px;
+  margin: 0 auto 100px auto;
+  padding: 30px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  border-radius: 12px;
   box-sizing: border-box;
+  margin-top: 50px;
   
 }
+
 .text-container-one {
   flex: 2;
   min-width: 60%;
-  font-size: 20px;
+  font-size: 18px;
+  color: #333;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.text-container-one h1 {
+  color: #1f3556;
+  font-size: 32px;
+}
+
+.text-container-one ul {
+ 
+  padding-left: 1rem;
+  line-height: 1.6;
+}
+
+.text-container-one li {
+  margin-bottom: 8px;
 }
 
 .img-enfermeriagral {
   flex: 1;
   display: flex;
   justify-content: center;
-  align-items:center;
+  align-items: center;
 }
 
 .img-enfermeriagral img {
-  max-width: 150%;
-  height:auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
+
+hr.my-5 {
+  border: none;
+  border-top: 2px dashed #ccc;
+  margin: 60px 0;
+}
+
+/* Responsive */
+/* Para pantallas hasta 1024px (tabletas en horizontal y laptops pequeñas) */
+@media (max-width: 1024px) {
+  .container-one {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .text-container-one {
+    font-size: 16px;
+  }
+
+  .text-container-one h1 {
+    font-size: 28px;
+  }
+}
+
+/* Para pantallas hasta 768px (tabletas verticales y móviles grandes) */
+@media (max-width: 768px) {
+  .container-one {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text-container-one {
+    min-width: 100%;
+    text-align: center;
+  }
+
+  .text-container-one h1 {
+    font-size: 24px;
+  }
+
+  .img-enfermeriagral {
+    margin-top: 20px;
+  }
+}
+
+/* Para pantallas pequeñas hasta 480px (móviles) */
+@media (max-width: 480px) {
+  .text-container-one {
+    font-size: 14px;
+  }
+
+  .text-container-one h1 {
+    font-size: 20px;
+  }
+
+  .container-one {
+    padding: 15px;
+  }
+}
+
+
+
+
+
+
 
 
 

@@ -28,7 +28,6 @@ body {
 .formulario {
   display: flex;
   justify-content: center;
-
   margin-top: 50px; 
   margin-bottom: 50px;
   margin-left: 600px;
@@ -40,6 +39,13 @@ body {
   padding: 20px;             /* espacio interno opcional para que no se pegue el contenido al borde */
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+@media (min-width: 769px) and (max-width: 1024px) {
+  .formulario {
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+}
+
 
 
 .contenedor-boton {
