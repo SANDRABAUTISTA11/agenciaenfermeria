@@ -212,6 +212,10 @@ hr.my-5 {
     width: 300px; /* más pequeño para móviles */
     margin-top: -40px;
   }
+   .networking-social img {
+        margin: 0 30px; /* Reduce el espacio entre iconos */
+    }
+  
 }
 
 /* Opcional: para pantallas muy pequeñas (teléfonos) */
@@ -234,4 +238,22 @@ hr.my-5 {
     padding: 8px 18px;
     width: 200px;
   }
+}
+
+@media (max-width: 576px) {
+    .text-footer {
+    font-size: 0.9rem;
+  }
+   .text-footer span {
+    display: block;
+    margin: 6px 0;
+  }
+    .networking-social img {
+        margin: 0 15px; /* Reduce aún más el espacio entre iconos */
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+
+        
+    }
 }
