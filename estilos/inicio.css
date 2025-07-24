@@ -186,6 +186,9 @@ grid-gap: 30px;
   .logofinal img {
     width: 340px;
   }
+  .parrafo2 {
+  font-size: 2rem;
+}
 }
 @media (max-width: 768px) {
   .button-contact .btn {
