@@ -1,178 +1,200 @@
 body {
     background-image: url('../imagenes/enfermeras-scaled.jpg');
-  background-size: cover;       /* Ajusta la imagen al tamaño de la pantalla */
-  background-repeat: no-repeat; /* Evita que se repita */
-  background-position: center;  /* Centra la imagen */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* min-height y display: flex; flex-direction: column; son buenas, pero no esenciales
+       si el footer es fixed y no está en el flujo normal del documento para ser empujado.
+       Sin embargo, si planeas cambiar el footer a sticky en el futuro, es útil mantenerlas. */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 80px; /* ¡IMPORTANTE! Asegura espacio para el footer fijo */
 }
 
 .enlaces-navbar a:hover {
-  color: #0f0944; /* Azul oscuro */
-  box-shadow: 0  4px 8px rgb(25, 17, 75); /* Sombra azul suave */
-  border-radius: 2px; /* Bordes redondeados para que la sombra no se vea cuadrada */
-  padding: 4px 8px; /* Para que el box-shadow tenga espacio alrededor del texto */
-  transition: color 0.3s ease, box-shadow 0.3s ease, padding 0.3s ease;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #0f0944;
+    box-shadow: 0 4px 8px rgb(25, 17, 75);
+    border-radius: 2px;
+    padding: 4px 8px;
+    transition: color 0.3s ease, box-shadow 0.3s ease, padding 0.3s ease;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
 .btn-outline-primary:hover {
-  color: #0f0944; /* Azul oscuro */
-  background-color: rgba(15, 9, 68, 0.1); /* Fondo azul claro al hover */
-  border-color: #0f0944;
-  transition: all 0.3s ease;
-}
-.navbar img{
-  height: 80px;
-  width: 90px;
-
+    color: #0f0944;
+    background-color: rgba(15, 9, 68, 0.1);
+    border-color: #0f0944;
+    transition: all 0.3s ease;
 }
 
+.navbar img {
+    height: 80px;
+    width: 80px;
+}
+
+/* ESTILOS CORREGIDOS PARA EL FORMULARIO */
 .formulario {
-  display: flex;
-  justify-content: center;
-  margin-top: 50px; 
-  margin-bottom: 50px;
-  margin-left: 600px;
-  margin-right: 600px;
-  background-color: #e9ecf36e;
+    display: flex;
+    justify-content: center; /* Centra el <form class="formulario1"> dentro de .formulario */
+    align-items: flex-start; /* Alinea los ítems al inicio del contenedor flex */
+    margin-top: 5%;
+    margin-bottom: 5%;
 
-  border: 1px solid rgba(19, 11, 95, 0.171);  /* grosor, estilo y color */
-  border-radius: 10px;       /* opcional: bordes redondeados */
-  padding: 20px;             /* espacio interno opcional para que no se pegue el contenido al borde */
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /* Propiedades para el centrado y ancho responsivo */
+    max-width: 500px; /* Ancho máximo para el formulario en pantallas grandes */
+    width: 90%; /* Ocupa el 90% del ancho disponible, hasta el max-width */
+    margin-left: auto; /* Centra el formulario horizontalmente */
+    margin-right: auto; /* Centra el formulario horizontalmente */
+
+    background-color: #e9ecf36e;
+    border: 1px solid rgba(19, 11, 95, 0.418);
+    border-radius: 10px;
+    padding: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+    /* flex-shrink: 0; es buena práctica en flex containers, pero aquí no es la causa del problema */
+    flex-shrink: 0;
+
+    /* === ¡IMPORTANTE! ELIMINAR O COMENTAR ESTA MEDIA QUERY PARA EL FORMULARIO === */
+    /* Ya no es necesaria, ya que max-width y auto margin lo hacen responsivo */
+    /*
+    @media (min-width: 769px) and (max-width: 1024px) {
+        .formulario {
+            margin-left: 200px;
+            margin-right: 200px;
+        }
+    }
+    */
 }
-@media (min-width: 769px) and (max-width: 1024px) {
-  .formulario {
-    margin-left: 200px;
-    margin-right: 200px;
-  }
-}
-
-
 
 .contenedor-boton {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*mando a lamar mi contenedor de footer*/
+/* ESTILOS DEL FOOTER */
 .footer {
-  background-color: #1f3556;/*color del fondo de mi footer*/
-  text-align: center;/*texto alineado al centro*/
-  padding: 20px 0;/*tamaño de mi contenedor azul*/
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;/*tipo de letra*/
+    background-color: #1f3556;
+    text-align: center;
+    padding: 20px 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: fixed; /* Hace que el footer sea fijo respecto al viewport */
+    bottom: 0; /* Lo posiciona en la parte inferior de la ventana */
+    width: 100%; /* Asegura que ocupe todo el ancho */
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
 }
 
-/*mando a llamar a mi div donde tengo mis iconos*/
 .networking-social {
-  margin-bottom: 10px;/*espacio entre los iconos y el texto*/
+    margin-bottom: 10px;
 }
 
-/*mando a llamar a las imagenes de mis iconos*/
 .networking-social img {
-  width: 40px;/*ancho de mis iconos de redes sociales*/
-  height: 40px;/*alto de mis iconos de redes sociales*/
-  border-radius: 50%; /* redondeo mis iconos */
-  display: inline-block;/*pongo los iconos alineados uno a un lado del otro*/
-  margin: 0 60px;/*espacio entre los iconos de redes sociales si le quito el cero me lo aplica para todos lados*/
-}
-/*mando a llamar mis iconos y los engrandezco*/
-.networking-social img:hover {
-  transform: scale(1.2);/*hace m+as grande mi icono cuando le paso el curosr*/
-}
-.logofinal{
-    margin-top: 40px;
-  text-align: center;
-  
-}
-.button-contact .btn {
-  background-color: #1f3556;
-
-}
-.button-contact{
-  text-align:center;
-  margin-bottom: 20px;
-
-}
-/* mando a llamar el texto del footer */
-.text-footer {
-  font-size:20px;/*tamaño de la letra*/
-  color: white;/*color de la letra*/
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-/*mando a llamar los span osea los alineamientos */
-.text-footer span {
-  margin:10px;/*espacio entre los span */
-  
-}
-
-/* Escritorio ancho */
-@media (min-width: 768px) {
-  .text-footer span {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
     display: inline-block;
-    margin: 0 15px;
-  }
+    margin: 0 60px; /* Sigue teniendo un gran margen, puedes reducirlo si los quieres más juntos */
 }
 
+.networking-social img:hover {
+    transform: scale(1.2);
+}
+
+.logofinal {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.button-contact .btn {
+    background-color: #1f3556;
+}
+
+.button-contact {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.text-footer {
+    font-size: 20px;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.text-footer span {
+    margin: 10px;
+}
+
+/* Media query para texto del footer en escritorio */
+@media (min-width: 768px) {
+    .text-footer span {
+        display: inline-block;
+        margin: 0 15px;
+    }
+}
+
+/* Media queries para imágenes (logofinal, button-contact) */
 @media (max-width: 768px) {
-  .logofinal img {
-    width: 300px; /* más pequeño para móviles */
-    margin-top: -40px;
-  }
-}
-
-/* Opcional: para pantallas muy pequeñas (teléfonos) */
-@media (max-width: 480px) {
-  .logofinal img {
-    width: 340px;
-  }
-}
-@media (max-width: 768px) {
-  .button-contact .btn {
-    font-size: 16px;
-    padding: 10px 20px;
-    width: 200px;
-  }
+    .logofinal img {
+        width: 300px;
+        margin-top: -40px;
+    }
+    .button-contact .btn {
+        font-size: 16px;
+        padding: 10px 20px;
+        width: 200px;
+    }
+    /* Ajuste para el margen de los iconos en el footer en pantallas medianas/pequeñas */
+    .networking-social img {
+        margin: 0 30px; /* Reduce el espacio entre iconos */
+    }
 }
 
 @media (max-width: 480px) {
-  .button-contact .btn {
-    font-size: 10px;
-    padding: 8px 18px;
-    width: 200px;
-  }
+    .logofinal img {
+        width: 340px;
+    }
+    .button-contact .btn {
+        font-size: 10px;
+        padding: 8px 18px;
+        width: 200px;
+    }
+    /* Ajuste para el margen de los iconos en el footer en pantallas muy pequeñas */
+    .networking-social img {
+        margin: 0 15px; /* Reduce aún más el espacio entre iconos */
+    }
+}
+
+@media (max-width: 992px) { /* Generalmente el punto de quiebre para 'md' en Bootstrap */
+    .formulario {
+        margin-top: 100px; /* Ajusta el margen superior para dispositivos más pequeños */
+        width: 85%; /* Podría ser un poco más ancho en tablets */
+        padding: 18px; /* Ligeramente menos padding */
+        margin-bottom: 100px;
+    }
+}
+
+/* Para pantallas pequeñas (tablets pequeñas y móviles en horizontal) */
+@media (max-width: 768px) { /* El punto de quiebre para 'sm' en Bootstrap */
+    .formulario {
+        margin-top: 80px; /* Más cerca de la parte superior en móviles */
+        width: 90%; /* Ocupa más ancho en pantallas pequeñas */
+        padding: 15px; /* Reduce el padding para ahorrar espacio */
+    }
+}
+
+/* Para pantallas muy pequeñas (móviles) */
+@media (max-width: 576px) { /* El punto de quiebre para 'xs' o móviles pequeños */
+    .formulario {
+            max-width: 350px; /* Ancho máximo para el formulario en pantallas grandes */
+
+    margin-left: auto; /* Centra el formulario horizontalmente */
+    margin-right: auto; /* Centra el formulario horizontalmente */
+        margin-top: 60px; /* Aún más cerca de la parte superior */
+
+
+        padding: 10px; /* Menos padding para no comprimir el contenido */
+        border-radius: 8px; /* Un poco menos de borde redondeado si se prefiere */
+    }
 }
