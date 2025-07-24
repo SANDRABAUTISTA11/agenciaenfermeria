@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  margin: 20px;
+  margin: 0px;
   background-color: #f9f9f9;
 }
 
@@ -105,7 +105,11 @@ input, select {
   border-radius: 5px;
   cursor: pointer;
 }
-
+.main-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
 
 
 /*mando a lamar mi contenedor de footer*/
@@ -193,5 +197,28 @@ input, select {
     font-size: 10px;
     padding: 8px 18px;
     width: 200px;
+  }
+}
+
+@media (max-width: 576px) {
+  .top-bar, .info-bar {
+    flex-direction: column;
+    gap: 10px;
+    font-size: 14px;
+  }
+
+  .card, .new-service {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .networking-social img {
+    margin: 0 10px;
+    width: 30px;
+    height: 30px;
+  }
+
+  .text-footer {
+    font-size: 16px;
   }
 }
