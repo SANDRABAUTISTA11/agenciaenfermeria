@@ -91,9 +91,12 @@ grid-gap: 30px;
 
 /* General para pantallas pequeñas (celulares) */
 @media (max-width: 576px) {
-  .parrafo1, .parrafo2 {
+  .parrafo1 {
     font-size: 1rem;
   }
+.parrafo2 {
+  font-size: 2rem;
+}
 
   .cards, .contenedor-cards {
     flex-direction: column;
