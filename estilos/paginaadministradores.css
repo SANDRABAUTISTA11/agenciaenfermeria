@@ -203,7 +203,7 @@ input, select {
 }
 
 
-media (max-width: 576px) {
+@media (max-width: 576px) {
   .parrafo1 {
     font-size: 1rem;
   }
