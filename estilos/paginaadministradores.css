@@ -18,6 +18,11 @@ body {
   border-color: #0f0944;
   transition: all 0.3s ease;
 }
+.navbar img{
+  height: 80px;
+  width: 90px;
+
+}
 
 h2 {
   text-align: center;
