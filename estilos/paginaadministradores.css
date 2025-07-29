@@ -113,13 +113,35 @@ input, select {
 }
 
 
+.servicio-item {
+  margin-bottom: 20px;
+  border-left: 5px solid #0d6efd;
+  border-radius: 10px;
+}
+
+.servicio-item.finalizado {
+  background-color: #f1f1f1;
+  border-left-color: #6c757d;
+}
+
+.card-actions {
+  margin-top: 10px;
+}
+
+.card-actions button {
+  margin-right: 10px;
+}
+
+
+
+
 
 /*mando a lamar mi contenedor de footer*/
 .footer {
   background-color: #1f3556;/*color del fondo de mi footer*/
   text-align: center;/*texto alineado al centro*/
   padding: 20px 0;/*tamaño de mi contenedor azul*/
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;/*tipo de letra*/
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman',serif;/*tipo de letra*/
 }
 
 /*mando a llamar a mi div donde tengo mis iconos*/
